@@ -28,7 +28,7 @@ btn.addEventListener("click",function(){
 ul.addEventListener("click",function(event){ 
     console.dir(event.target)
     if(event.target.nodeName=="BUTTON"){ //We want this event target to button not li. 
-        let itemList=event.target.parentElement;
+        let itemList=event.target.parentElement; //Button ka parent element=>Li
         itemList.remove();
         console.log("deleted");
     } //else if we click on li ul will be triggered but if block will not get executed.
